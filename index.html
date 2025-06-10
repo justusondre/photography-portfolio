@@ -299,23 +299,88 @@
             margin-bottom: 1rem;
         }
         
-        /* Contact Section */
+         /* Contact Section */
         .contact-info {
-            margin-bottom: 2rem;
+            margin: 3rem 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            max-width: 1000px;
         }
         
         .contact-method {
-            display: flex;
-            align-items: center;
-            margin-bottom: 1rem;
+            background: rgba(254, 201, 0, 0.05);
+            border: 1px solid rgba(254, 201, 0, 0.2);
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+        }
+        
+        .contact-method:hover {
+            border-color: #fec900;
+            background: rgba(254, 201, 0, 0.1);
+            transform: translateY(-5px);
         }
         
         .contact-icon {
-            margin-right: 1rem;
             color: #fec900;
-            font-size: 1.2rem;
-            width: 30px;
-            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        
+        .contact-method h3 {
+            font-family: 'Bodoni Moda', serif;
+            color: #fec900;
+            font-size: 1.3rem;
+            margin: 1rem 0;
+            letter-spacing: 1px;
+        }
+        
+        .contact-method p {
+            font-family: 'Bodoni Moda', serif;
+            color: #fefefe;
+            margin: 0.5rem 0;
+            line-height: 1.5;
+        }
+        
+        .contact-method a {
+            color: #fec900;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-method a:hover {
+            color: #fefefe;
+            text-decoration: underline;
+        }
+        
+        .contact-requirements {
+            background: rgba(254, 254, 254, 0.05);
+            border: 1px solid rgba(254, 254, 254, 0.1);
+            padding: 2rem;
+            margin-top: 3rem;
+            border-radius: 5px;
+        }
+        
+        .contact-requirements h3 {
+            font-family: 'Bodoni Moda', serif;
+            color: #fec900;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            letter-spacing: 1px;
+        }
+        
+        .contact-requirements ul {
+            font-family: 'Bodoni Moda', serif;
+            color: #fefefe;
+            line-height: 1.6;
+            padding-left: 1.5rem;
+        }
+        
+        .contact-requirements li {
+            margin-bottom: 0.5rem;
         }
         
         /* Social Icons */
@@ -453,12 +518,12 @@
         <nav>
             <ul class="nav-menu">
                 <li><a href="#" class="nav-link active" data-page="home">HOME</a></li>
-                <li><a href="#" class="nav-link" data-page="bio">BIOGRAPHY</a></li>
+                <li><a href="#" class="nav-link" data-page="bio">MEMOIR</a></li>
                 <li><a href="#" class="nav-link" data-page="services">SERVICES</a></li>
                 <li><a href="#" class="nav-link" data-page="contact">CONTACT</a></li>
                 <li class="social-menu-item">
     <div class="sidebar-social-icons">
-        <a href="https://discord.com/" target="_blank" class="social-icon"><i class="fab fa-discord"></i></a>
+        <a href="https://discord.gg/Fg5Fqm8cg4" target="_blank" class="social-icon"><i class="fab fa-discord"></i></a>
         <a href="https://www.instagram.com/ondre.revon/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
         <a href="https://www.tiktok.com/@ondre.revon?lang=en" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
     </div>
@@ -508,10 +573,18 @@
         
         <!-- Bio Page Content -->
         <section id="bio-page" class="page-content">
-            <h2 class="content-title">Biography</h2>
+            <h2 class="content-title">About me</h2>
             <div class="bio-content">
-                <div class="content-text">
-                    <p>Ondre Justus is a rising photographer based in Munich, Germany, whose work is marked by emotional depth and an intuitive connection to his subjects. Originally from Michigan, USA, his journey into photography was anything but conventional—beginning with a rigorous academic background in Biology and Chemistry before a transformative move to Germany reshaped his creative path.</p> <p>It was in Berlin, surrounded by the city’s raw creativity and unapologetic self-expression, that he rediscovered a long-buried passion for visual storytelling. Photography and film had always been silent loves, but it was in moments of vulnerability—navigating life in a new country, confronting self-doubt, and seeking authenticity—that he realized how profoundly images could articulate what words could not. The camera became both a shield and a mirror, helping him process the world while revealing his own resilience.</p> <p>His technical precision, honed through scientific training, merges with an artist’s sensitivity, resulting in portraits that feel intimate and alive. Specializing in portraits, small events, and business photography, he thrives on capturing unguarded humanity: the fleeting glance, the quiet confidence, the unscripted joy. Every session is an act of trust, and he approaches it with humility, knowing firsthand how vulnerability can transform into strength.</p> <p>His journey has been arduous—marked by reinvention, cultural adaptation, and the courage to pursue passion over convention—but it’s these very struggles that infuse his work with authenticity. Now, as a rising talent in Munich’s creative scene, he embraces photography not just as a craft, but as a lifeline: a way to connect, heal, and remind others that even in chaos, there’s beauty worth framing.</p>
+                <img src="https://images.unsplash.com/photo-1749580018744-407244add60b?q=80&w=2235&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Ondre Justus Portrait" class="bio-image">
+                <div class="bio-text-content">
+                    <div class="content-text">
+                        <p>Ondre Justus is a rising photographer based in Munich, Germany, whose focus is capturing raw and meaningful experiences through the lens of his camera. Originally from Michigan, his path to photography was far from traditional—he started with a strong academic background in Biology and Chemistry before discovering his true passion for visual storytelling.</p>
+                        <p>A huge inspiration that influenced his career change came from several visits to Berlin. He was struck by the city's raw creative energy and openness to self-expression. Photography and film had always been a quiet interest, something he enjoyed but never seriously pursued. However, walking through Berlin's vintage streets, surrounded by art and creativity, really shifted his stance on what was possible.</p>
+                        <p>As time moved forward, navigating cultural shifts and the challenges of building a new life exposed his most vulnerable self. These experiences deepened and reshaped his worldview in profound ways. Living in Germany has given him a unique perspective on change and adaptation. Moving to a new country, learning to navigate different cultural norms, and building a life from scratch taught him that everyone has their own story of growth and reinvention. It was during these most vulnerable moments that he found himself truly pushed toward creative pursuit.</p>
+                        <p>His scientific background became an unexpected asset, teaching him careful observation and attention to detail that now informs his photographic approach. This analytical foundation helps him read lighting, composition, and most importantly, he captures the subtle expressions and body language that unveil his subjects' true inner self.</p>
+                        <p>His approach to photography is straightforward: every session is built on trust and collaboration. He believes the best images emerge from raw, ungaurded moments. In order to do so, he works hard to create a comfortable environment where people can relax and be themselves, understanding from his own experience how important it is to feel safe when being vulnerable. He focuses on capturing people as they truly are—finding those unguarded moments that influence storytelling in a photo.</p>
+                        <p>Now established in Munich, Ondre treats each project as an opportunity to tell someone's story through visual arts. His work reflects his belief that good photography is not only about technical skill, but about creating space for people to be seen and understood exactly as they are.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -530,12 +603,12 @@
                     <p class="service-description">Sessions include:</p>
                     <ul class="service-description">
                         <li>Pre-session consultation</li>
-                        <li>1-2 hour photo session at location of your choice</li>
+                        <li>Location of your choice</li>
                         <li>Professional lighting and equipment</li>
                         <li>Basic retouching of selected images</li>
-                        <li>High-resolution digital files with print release</li>
+                        <li>High-resolution digital files</li>
                     </ul>
-                    <p class="service-price">Starting at $450</p>
+                    <p class="service-price">Custom quotes based on project scope</p>
                 </div>
                 
                 <div class="service-box">
@@ -543,13 +616,13 @@
                     <p class="service-description">Documentation of intimate gatherings, celebrations, and private events. Perfect for birthdays, anniversaries, small weddings, or corporate gatherings where you want professional coverage without an intrusive presence.</p>
                     <p class="service-description">Package includes:</p>
                     <ul class="service-description">
+                        <li>Pre-session consultation</li>
                         <li>Up to 4 hours of coverage</li>
-                        <li>Two photographers for comprehensive coverage</li>
                         <li>Digital gallery of edited high-resolution images</li>
                         <li>Online gallery for easy sharing with guests</li>
-                        <li>Option to purchase prints and albums</li>
+                        <li>High-resolution digital files</li>
                     </ul>
-                    <p class="service-price">Starting at $800</p>
+                    <p class="service-price">Custom quotes based on project scope</p>
                 </div>
                 
                 <div class="service-box">
@@ -557,11 +630,12 @@
                     <p class="service-description">Professional images for your business needs, including executive portraits, team photos, office environments, and product photography. Essential for websites, marketing materials, and social media presence.</p>
                     <p class="service-description">Services include:</p>
                     <ul class="service-description">
+                        <li>Pre-session consultation</li>
                         <li>Corporate headshots and team photos</li>
                         <li>Workplace and behind-the-scenes documentation</li>
                         <li>Product photography (small to medium items)</li>
                         <li>Branding and marketing images</li>
-                        <li>Fast turnaround for urgent business needs</li>
+                        <li>High-resolution digital files</li>
                     </ul>
                     <p class="service-price">Custom quotes based on project scope</p>
                 </div>
@@ -580,25 +654,25 @@
                     <div class="contact-icon"><i class="fas fa-envelope"></i></div>
                     <div>
                         <h3>Email</h3>
-                        <p><a href="mailto:ondre@revonphoto.com" style="color: #fec900;">ondre@revonphoto.com</a></p>
+                        <p><a href="mailto:ondre@revonphoto.com" style="color: #fec900;">ondrejustus.business@gmail.com</a></p>
                     </div>
                 </div>
                 
                 <div class="contact-method">
                     <div class="contact-icon"><i class="fas fa-phone"></i></div>
                     <div>
-                        <h3>Phone</h3>
-                        <p>+1 (555) 123-4567</p>
-                        <p>Monday-Friday, 9am-5pm EST</p>
+                        <h3>Whatsapp</h3>
+                        <p>+49 17663783015</p>
+                        <p>Monday-Friday, 8:00-17:00 (GMT+2)</p>
                     </div>
                 </div>
                 
                 <div class="contact-method">
                     <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
                     <div>
-                        <h3>Studio</h3>
-                        <p>123 Artisan Lane</p>
-                        <p>Brooklyn, NY 11201</p>
+                        <h3>Location</h3>
+                        <p>Berg am Laim</p>
+                        <p>81637, München</p>
                         <p>By appointment only</p>
                     </div>
                 </div>
@@ -607,11 +681,11 @@
             <div class="content-text">
                 <p>For the fastest response, please include in your message:</p>
                 <ul>
-                    <li>Type of photography service needed</li>
-                    <li>Preferred date(s) and location</li>
-                    <li>Any specific requirements or vision for the project</li>
+                    <li>Type of photography service needed.</li>
+                    <li>Preferred date(s) and location.</li>
+                    <li>Any specific requirements or vision for the project.</li>
                 </ul>
-                <p>I'm available for assignments in the New York area and for travel worldwide. Looking forward to creating something beautiful together.</p>
+                <p>I'm available for assignments in the Munich area and for travel within a one-hour radius. Looking forward to creating something beautiful together.</p>
             </div>
         </section>
     </main>
